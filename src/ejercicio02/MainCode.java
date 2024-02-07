@@ -38,10 +38,10 @@ public class MainCode {
 			System.out.println("Introduce la contraseña");
 			respuesta = sc.next();
 			if (respuesta.equals(contraseña)) {
-				System.out.println("GG");
+				System.out.println("Acceso concedido");
 				acceso = true;
 			} else {
-				System.out.println("NEIN");
+				System.out.println("Contraseña incorrecta.");
 				System.out.println("Caracteres que faltan: " + respuesta.compareTo(contraseña));
 			}
 		} while (!acceso);
