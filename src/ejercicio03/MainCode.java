@@ -18,7 +18,7 @@ public class MainCode {
 		int espaciosEnBlanco = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Inserte una frase");
-		frase = sc.next();
+		frase = sc.nextLine();
 		System.out.println(EspaciosEnBlanco.analizar(frase, espaciosEnBlanco));
 		sc.close();
 		
