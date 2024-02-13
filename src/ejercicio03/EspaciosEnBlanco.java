@@ -15,12 +15,18 @@ public class EspaciosEnBlanco {
 	 * @return cuantos espacios en blanco hay en la frase
 	 */
 	public static int analizar(String frase, int espaciosEnBlanco) {
+		
+		// char[] letras: la frase dividida en letras
 		char[] letras = frase.toCharArray();
+		
+		// For: ve analizando letra por letra por un espacio en blanco
 		for (int i = 0; i<letras.length; i++) {
 			if (letras[i]==' ') {
 				espaciosEnBlanco++;
 			}
-		}
+		} // Fin For
+		
+		// Devuelve espaciosEnBlanco al main
 		return espaciosEnBlanco;
 	}
 
