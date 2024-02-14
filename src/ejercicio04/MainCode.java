@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class MainCode {
 
 	/**
-	 * Clase principal del codigo
+	 * Funcion main
 	 * 
 	 * @param args
 	 */
