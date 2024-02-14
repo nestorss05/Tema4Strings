@@ -3,6 +3,8 @@ package ejercicio08;
 import java.util.Scanner;
 
 /**
+ * Clase donde se le pedira al usuario una frase y donde se llamara a la funcion
+ * esPalindroma
  * 
  * @author Nestor Sanchez
  */
@@ -30,11 +32,11 @@ public class ClaseMain {
 
 		// Llama a la funcion IdefClase.esPalindroma y guarda su resultado en
 		// nApariciones
-		esPalindroma = IdefClase.esPalindroma(frase);
-		
+		esPalindroma = IdefFrase.esPalindroma(frase);
+
 		// Muestra el resultado por pantalla
 		System.out.println(esPalindroma);
-		
+
 		// Cierra el Scanner
 		sc.close();
 

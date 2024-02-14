@@ -1,13 +1,13 @@
 package ejercicio08;
 
 /**
- * 
+ * Clase IdefFrase: identificador de frases
  * @author Nestor Sanchez
  */
-public class IdefClase {
+public class IdefFrase {
 
 	/**
-	 * 
+	 * Funcion esPalindroma: analizara si una frase es palindroma o no
 	 * @param frase: frase a analizar introducida por el usuario
 	 * @return si es palindroma o no
 	 */
