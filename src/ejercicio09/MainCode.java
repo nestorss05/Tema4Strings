@@ -28,7 +28,7 @@ public class MainCode {
 		frase = sc.nextLine();
 
 		// If-Else: si la frase contiene sus dialectos, se procedera a traducir la frase
-		if (frase.contains("Javalín, javalón" + "\t") || frase.contains("\t" + "javalén, len, len")) {
+		if (frase.startsWith("Javalín, javalón" + "\t") || frase.endsWith("\t" + "javalén, len, len")) {
 			frase = frase.replace("Javalín, javalón", "");
 			frase = frase.replace("javalén, len, len", "");
 			frase = frase.replace("\t", "");
