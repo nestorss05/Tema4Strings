@@ -1,4 +1,4 @@
-package ejercicio15;
+package ejercicio16;
 
 import java.util.Scanner;
 
@@ -26,9 +26,13 @@ public class MainCode {
 		// char[] palabrasOriginales: fraseOriginal pasada a una cadena de caracteres
 		char[] palabrasOriginales;
 
+		// char palabrasOriginalesCopia: copia de palabrasOriginales, puesto a que
+		// palabrasOriginales sera modificado posteriormente
+		char[] palabrasOriginalesCopia;
+
 		// boolean acertado: indica si el jugador ha acertado o no
 		boolean acertado = false;
-		
+
 		// boolean esVacia: comprobante de cadenas vacias
 		boolean esVacia = true;
 
@@ -42,10 +46,11 @@ public class MainCode {
 			if (!fraseOriginal.equals("")) {
 				esVacia = false;
 			}
- 		} while (esVacia);
+		} while (esVacia);
 
 		// Pasa la frase a array
 		palabrasOriginales = fraseOriginal.toCharArray();
+		palabrasOriginalesCopia = fraseOriginal.toCharArray();
 
 		// Pide al usuario que acierte la frase
 		do {
@@ -57,6 +62,8 @@ public class MainCode {
 				acertado = true;
 			} else {
 				System.out.println("No has acertado la frase");
+				System.out.println("Letras que coinciden con el texto original: "
+						+ String.valueOf(Frase.coinciden(palabrasOriginalesCopia, fraseRespuesta)));
 			}
 		} while (!acertado);
 
