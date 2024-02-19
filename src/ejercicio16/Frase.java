@@ -1,6 +1,5 @@
 package ejercicio16;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
